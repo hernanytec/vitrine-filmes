@@ -6,7 +6,7 @@ Home
 Detalhes do filme
 ![home page](/screenshots/details.png)
 
-### Uma vitrine de filmes e séries de TV. Nesta vitrine o usuário poderá consultar os filmes e visualizar as informações.
+### Uma vitrine de filmes e séries de TV. Nesta vitrine o usuário poderá consultar os filmes e visualizar as informações. Clique [aqui](https://vitrine-filmes.herokuapp.com/) para acessar o site.
 
 # Home
 - [x] Vizualizar lista de filmes.
