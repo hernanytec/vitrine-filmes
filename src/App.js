@@ -1,19 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './App.css'
 
-import MovieList from './components/movieList'
-import SearchBar from './components/searchbar'
+import Routes from './routes'
 
 export default function App() {
-
-  const [movieSearch, setMovieSearch] = useState('batman')
-  const url = `http://www.omdbapi.com/?apikey=516f0a3&s=${movieSearch}`
-
-  return (
-    <div className='app-container'>
-      <SearchBar onSubmitQuery={setMovieSearch} />
-      <MovieList apiUrl={url} />
-    </div>
-  )
+  return <Routes />
 }
