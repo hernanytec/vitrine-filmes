@@ -66,7 +66,7 @@ export default function MovieList({ apiUrl, handleMovieClick }) {
 
                         <ul>
                             <li className={selectedPage === 1 ? 'disabled' : null}
-                                onClick={() => setSelectedPage(selectedPage - 1)}>Anterior</li>
+                                onClick={() => setSelectedPage(selectedPage - 1)}>Previous</li>
                             {
 
                                 paginatorPages.slice(Math.max(selectedPage - 3, 0), selectedPage + 3).map(page => (
@@ -80,7 +80,7 @@ export default function MovieList({ apiUrl, handleMovieClick }) {
                                 ))
                             }
                             <li className={selectedPage === paginatorPages.length ? 'disabled' : null}
-                                onClick={() => setSelectedPage(selectedPage + 1)}>Próxima</li>
+                                onClick={() => setSelectedPage(selectedPage + 1)}>Next</li>
                         </ul>
                     </div>
                     : null
