@@ -1,0 +1,19 @@
+.search-container{
+    display: flex;   
+    justify-content: center;
+}
+
+.search-form{
+    display: flex;
+}
+
+form.search-form input[type=text] {
+    padding: 10px;
+}
+  
+form.search-form button {
+    flex: 1;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+}

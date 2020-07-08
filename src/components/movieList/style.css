@@ -2,7 +2,7 @@ body{
     background-color: #222;
 }
 
-.movies{
+.movies-gallery{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -10,6 +10,7 @@ body{
 }
 
 .paginator{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -28,15 +29,23 @@ body{
     background-color: rgba(0,0,0,.5);
 }
 
-.paginator .actual{
+.paginator .selected{
     background-color: rgba(255,255,255,.5);
 }
 
 .paginator li:hover{
-    background-color: rgba(255,255,255,.5);;
+    background-color: rgba(255,255,255,.5);
 }
 
 .paginator li.disabled {
     pointer-events:none;
     opacity:0.3;
+}
+
+.not-found-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
 }
