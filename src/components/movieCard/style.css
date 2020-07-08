@@ -1,7 +1,11 @@
 .card{
-    width: 250px;
+    width: 18%;
+    min-width: 250px;
+    min-height: 250px;
     margin-top: 20px;
     background-color: transparent;
+    display: flex;
+    justify-content: center;
 }
 
 .card img{
