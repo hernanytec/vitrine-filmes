@@ -17,7 +17,7 @@ export default function SearchBar({ onSubmitQuery }) {
 
                 <input
                     autoFocus
-                    placeholder="Buscar por título"
+                    placeholder="Search by title"
                 />
 
                 <button type="submit">

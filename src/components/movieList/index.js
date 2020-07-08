@@ -3,10 +3,11 @@ import React, { useState, useEffect } from 'react';
 
 import MovieCard from '../movieCard';
 
+import notFound from '../../assets/not_found.svg'
+
 import './style.css'
 
-import notFound from '../../assets/not_found.svg'
-export default function MovieList({ apiUrl }) {
+export default function MovieList({ apiUrl, handleMovieClick }) {
 
     const [selectedPage, setSelectedPage] = useState(1)
     const [movies, setMovies] = useState([])
@@ -49,7 +50,7 @@ export default function MovieList({ apiUrl }) {
                     totalResults > 0
                         ?
                         movies.map(movie => (
-                            <MovieCard key={movie.imdbID} movie={movie} />
+                            <MovieCard handleClick={handleMovieClick} key={movie.imdbID} movie={movie} />
                         ))
 
                         : <div className='not-found-container'>
